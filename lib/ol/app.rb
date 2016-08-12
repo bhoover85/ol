@@ -1,7 +1,5 @@
 module Ol
   class App < Sinatra::Base
-    attr_accessor :page
-    
     db  = 'db/businesses.sqlite3'
     csv = 'files/50k_businesses.csv'
     
