@@ -1,6 +1,6 @@
 module Ol
   class DB
-    attr_accessor :dataset
+    attr_reader :dataset
 
     # Initializes the database, matching columns from the CSV.
     def initialize(db, csv)
@@ -33,6 +33,9 @@ module Ol
       @dataset = Sequel.sqlite(db)
       @dataset = @dataset[:businesses]
     end
+
+
+    private
 
     # Populates the database with CSV data. It is much faster to map the CSV to 
     # a hash and use Sequel's multi_insert rather than reading and inserting the 
