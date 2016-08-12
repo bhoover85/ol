@@ -2,6 +2,10 @@
 
 This is my implementation of the REST API project from OwnLocal. It was written with Ruby and Sinatra. I used Sequel and sqlite3 for the database, and RSpec for testing.
 
+I chose Sinatra over Rails due to its light weight and flexibility. Since there are only two endpoints I felt that Sinatra would be a great fit for what I was trying to accomplish. Adding a few more endpoints would still fit well within its scope. If this were a larger project, or had the potential to be, I would use Rails due to its features and MVC pattern.
+
+If we wanted to add authentication we could do so with Rack::Auth::Basic or use an available gem such as sinatra-authentication.
+
 <br/>
 
 ## How to Run
@@ -10,7 +14,7 @@ This is my implementation of the REST API project from OwnLocal. It was written 
     $ cd ol/
     $ bundle install
 
-From here you can start the web server with `rackup` and browse to http://localhost:9292 or run tests with `bundle exec rspec`.
+From here you can start the web server with `rackup` and browse to http://localhost:9292 or run tests with `bundle exec rspec`. On first load the database will be created and populated with the CSV data.
 
 <br/>
 
