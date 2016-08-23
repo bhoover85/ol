@@ -34,10 +34,10 @@ Fetches a list of businesses with pagination. Businesses are sorted by id and de
 *Output:*
 
     {
-    "page":1,
-    "per_page":50,
+    "page":5,
+    "per_page":100,
     "total":50000,
-    "total_pages":1000,
+    "total_pages":500,
     "businesses":[
         {
         "id":0,
