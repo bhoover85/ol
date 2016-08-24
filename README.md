@@ -10,7 +10,7 @@ If we wanted to add authentication we could do so with Rack::Auth::Basic or use 
 
 ## How to Run
 
-    $ git clone git@github.com:bhoover85/ol.git
+    $ git clone git@github.com:bradhvr/ol.git
     $ cd ol/
     $ bundle install
 
