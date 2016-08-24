@@ -8,5 +8,6 @@ require 'will_paginate'
 require 'will_paginate/sequel'
 
 require_relative "ol/app"
+require_relative "ol/business"
 require_relative "ol/db"
 require_relative "ol/version"
